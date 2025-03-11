@@ -1,0 +1,45 @@
+/* Component/StickyComponent/Sidebar.css */
+.sidebar {
+    height: 100%;
+    background-color: #f5f5f5;
+    border-right: 1px solid #ddd;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .sidebar li:hover {
+    background-color: #e8e8e8;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+  }
+  
+  /* Scrollbar styling */
+  .sidebar {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f5f5f5;
+  }
+  
+  .sidebar::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .sidebar::-webkit-scrollbar-track {
+    background: #f5f5f5;
+  }
+  
+  .sidebar::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }

@@ -1,0 +1,65 @@
+/* NpfForm.css */
+.npf-form-container {
+    margin-left: 250px; /* Width of the sidebar */
+    padding: 20px;
+    height: calc(100vh - 60px); /* Full viewport height minus navbar height */
+    overflow-y: auto;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  .col {
+    flex: 1;
+    padding: 0 15px;
+    margin-bottom: 20px;
+  }
+  
+  .col label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    text-align: left;
+  }
+  
+  .col input, 
+  .col textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .col input:focus, 
+  .col textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }
+  
+  .col textarea {
+    min-height: 80px;
+    resize: vertical;
+  }
+  
+  .text-red-500 {
+    color: #dc3545;
+  }
+  
+  .text-sm {
+    font-size: 0.875rem;
+    margin-top: 5px;
+    text-align: left;
+  }

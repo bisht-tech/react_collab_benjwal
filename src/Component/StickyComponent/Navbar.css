@@ -1,0 +1,26 @@
+/* Component/StickyComponent/Navbar.css */
+.navbar-component {
+    height: 60px;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .navbar-component h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+  }
+  
+  /* Add any additional navbar styling here */

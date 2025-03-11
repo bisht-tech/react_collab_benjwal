@@ -1,0 +1,70 @@
+/* Component/NpfMaster.css */
+.npf-master-container {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  
+  .col {
+    flex: 1;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    min-width: 250px;
+  }
+  
+  .col label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    text-align: left;
+  }
+  
+  .col input,
+  .col textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .col input:focus,
+  .col textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }
+  
+  .col textarea {
+    min-height: 80px;
+    resize: vertical;
+  }
+  
+  .text-red-500 {
+    color: #dc3545;
+  }
+  
+  .text-sm {
+    font-size: 0.875rem;
+    margin-top: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .row {
+      flex-direction: column;
+    }
+    
+    .col {
+      width: 100%;
+    }
+  }
