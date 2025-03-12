@@ -1,0 +1,152 @@
+/* NPF Master Container */
+.npf-master-container {
+  /* display: flex;
+  flex-direction: column; */
+  /* justify-content: center; */
+  max-width: 75%;
+  margin-left: 22%;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.npf-title {
+  text-align: center;
+  background: #17a2b8;
+  color: white;
+  padding: 15px;
+  font-size: 24px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Form Container */
+.npf-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Fields */
+.npf-form .form-group {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.npf-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.npf-form input,
+.npf-form textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.npf-form input:focus,
+.npf-form textarea:focus {
+  border-color: #17a2b8;
+  outline: none;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 14px;
+}
+
+/* Buttons */
+.npf-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.npf-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.npf-buttons .save-btn {
+  background: #28a745;
+  color: white;
+}
+
+.npf-buttons .modify-btn {
+  background: #007bff;
+  color: white;
+}
+
+.npf-buttons button:hover {
+  opacity: 0.8;
+}
+
+/* Table Container */
+.npf-table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.npf-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.npf-table th,
+.npf-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.npf-table th {
+  background: #007bff;
+  color: white;
+}
+
+.npf-table tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+.npf-table tr:hover {
+  background: #d3e9ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .npf-form {
+    flex-direction: column;
+  }
+
+  .npf-form .form-group {
+    flex: 1 1 100%;
+  }
+
+  .npf-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .npf-buttons button {
+    width: 80%;
+  }
+
+  .npf-table {
+    font-size: 14px;
+  }
+}

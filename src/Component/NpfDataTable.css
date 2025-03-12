@@ -1,0 +1,96 @@
+/* General styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Table container */
+  .table-container {
+    width: 100%;
+    overflow-x: auto; /* Enables horizontal scrolling on small screens */
+    margin-top: 20px;
+  }
+  
+  /* Table styling */
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+  }
+  
+  /* Table header */
+  .table thead {
+    background: #343a40;
+    color: white;
+  }
+  
+  /* Table rows */
+  .table th,
+  .table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  /* Button styling */
+  .btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .btn-warning {
+    background: #ffc107;
+    color: black;
+  }
+  
+  .btn-warning:hover {
+    background: #e0a800;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .table-container {
+      overflow-x: scroll;
+      display: block;
+    }
+  
+    .table thead {
+      display: none; /* Hide table header on very small screens */
+    }
+  
+    .table,
+    .table tbody,
+    .table tr,
+    .table td {
+      display: block;
+      width: 100%;
+    }
+  
+    .table tr {
+      margin-bottom: 15px;
+      border-bottom: 2px solid #ddd;
+      padding: 10px;
+    }
+  
+    .table td {
+      text-align: right;
+      position: relative;
+      padding-left: 50%;
+    }
+  
+    .table td:before {
+      content: attr(data-label);
+      position: absolute;
+      left: 10px;
+      width: 45%;
+      text-align: left;
+      font-weight: bold;
+    }
+  }
+  

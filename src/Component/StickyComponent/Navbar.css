@@ -1,0 +1,45 @@
+/* ✅ Navbar Base Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(44, 191, 228);
+  padding: 15px 23px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  z-index: 1000; /* Ensures navbar is above all other elements */
+}
+
+/* ✅ Sticky Effect When Scrolling */
+.navbar.sticky {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 12px 20px;
+  background: rgba(44, 191, 228, 0.9); /* Slight transparency */
+  backdrop-filter: blur(5px); /* Smooth blur effect */
+}
+
+/* ✅ Navbar Text Styling */
+.navbar h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+/* ✅ Push Content Below Fixed Navbar */
+.layout-container {
+  margin-top: 70px; /* Push content down */
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .navbar h2 {
+    font-size: 20px;
+  }
+}
